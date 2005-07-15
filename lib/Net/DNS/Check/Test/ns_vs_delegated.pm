@@ -77,7 +77,7 @@ Compare the NS RR found with the effectively delegated nameservers (NS RR in the
 
 =head1 COPYRIGHT
 
-Copyright (c) 2005 Lorenzo Luconi Trombacchi 
+Copyright (c) 2005 Lorenzo Luconi Trombacchi  - IIT-CNR
 
 All rights reserved.  This program is free software; you may redistribute
 it and/or modify it under the same terms as Perl itself.

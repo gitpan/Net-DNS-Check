@@ -76,13 +76,15 @@ C<use Net::DNS::Check::Test::host_ip_vs_ip_orig>;
 
 =head1 DESCRIPTION
 
-Check if the IP addresses found during the hosts resolution do not belong to IP private classes
+Check if the IP addresses found during the hosts resolution do not belong to IP private classes.
+
+Due to a differnt internal structure, at present this is the only test that doesn't report detailed information about results of the single analisys for every nameserver. You can only know if the test fails or not.
 
 =head1 METHODS
 
 =head1 COPYRIGHT
 
-Copyright (c) 2005 Lorenzo Luconi Trombacchi
+Copyright (c) 2005 Lorenzo Luconi Trombacchi - IIT-CNR
 
 All rights reserved.  This program is free software; you may redistribute
 it and/or modify it under the same terms as Perl itself.

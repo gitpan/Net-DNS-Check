@@ -69,7 +69,7 @@ Compare the refresh time in SOA RR of all authoritative name servers
 
 =head1 COPYRIGHT
 
-Copyright (c) 2005 Lorenzo Luconi Trombacchi 
+Copyright (c) 2005 Lorenzo Luconi Trombacchi  - IIT-CNR
 
 All rights reserved.  This program is free software; you may redistribute
 it and/or modify it under the same terms as Perl itself.

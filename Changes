@@ -1,5 +1,7 @@
 Revision history for Perl extension Net::DNS::Check.
 
+0.45  Mon Jul 15 2005
+	- Some updates and fixes of documentation
 0.44  Mon Jun 06 2005
 	- First public release on CPAN
 	- Written the perldoc in english of Net::DNS::Check 

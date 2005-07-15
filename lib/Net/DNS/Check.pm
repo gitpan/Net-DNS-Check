@@ -3,7 +3,7 @@ package Net::DNS::Check;
 use strict;
 use vars qw($VERSION $AUTOLOAD);
 
-$VERSION = '0.44';
+$VERSION = '0.45';
 
 use Carp;
 use Net::DNS;
@@ -1042,23 +1042,26 @@ It returns an hash in which keys are nameserver names (delegated nserver) and va
 
 Example of returned hash for 'soa_serial_syntax' test:
 
-%ret = (
- 'ns.foo.com' => {
- 	'desc'		=> '2005041700', 
-	'status' 	=> 1
- },
- 'ns.acme.net' => {
- 	'desc'		=> '20050320', 
-	'status' 	=> 0
- },
-);
+	%ret = (
+			'ns.foo.com' => {
+			'desc'		=> '2005041700', 
+			'status' 	=> 1
+		},
+			'ns.acme.net' => {
+			'desc'		=> '20050320', 
+			'status' 	=> 0
+		},
+	);
      
 
-Perl example:
+Example:
+
     foreach my $test_name ( $dnscheck->test_list() ) {
+
         $result .= "\n$test_name: ".$dnscheck->test_status($test_name) ."\n";
         $result .= "==============================\n";
         my %test_detail = $dnscheck->test_detail($test_name);
+
         foreach my $ns_name ( keys %test_detail ) {
             if ( defined $test_detail{$ns_name}->{desc} ) {
                 my $detail_status   = $test_detail{$ns_name}->{status};
@@ -1066,6 +1069,7 @@ Perl example:
                 $result .= "$ns_name: Status: $detail_status Desc: $detail_desc\n";
             } 
         }
+
     }
 
 =head2 domain
@@ -1074,7 +1078,7 @@ Returns the domain name passed as argument to the method "new".
 
 =head1 COPYRIGHT
 
-Copyright (c) 2005 Lorenzo Luconi Trombacchi
+Copyright (c) 2005 Lorenzo Luconi Trombacchi - IIT-CNR
 
 All rights reserved.  This program is free software; you may redistribute
 it and/or modify it under the same terms as Perl itself.
